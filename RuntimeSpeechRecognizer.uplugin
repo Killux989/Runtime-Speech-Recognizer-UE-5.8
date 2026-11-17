@@ -1,0 +1,47 @@
+{
+	"FileVersion": 3,
+	"Version": 2,
+	"VersionName": "2.0",
+	"FriendlyName": "Runtime Speech Recognizer",
+	"Description": "Real-time, offline speech recognition based on whisper.cpp (OpenAI Whisper). CPU (AVX2) and optional Vulkan GPU acceleration, 99 languages, keyword/command matching.",
+	"Category": "Audio",
+	"CreatedBy": "Killux",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "WhisperCpp",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault"
+		},
+		{
+			"Name": "RuntimeSpeechRecognizer",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault"
+		},
+		{
+			"Name": "RuntimeSpeechRecognizerEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "EditorScriptingUtilities",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		},
+		{
+			"Name": "AudioCapture",
+			"Enabled": true
+		}
+	]
+}

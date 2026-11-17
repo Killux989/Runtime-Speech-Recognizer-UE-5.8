@@ -1,0 +1,18 @@
+# Compiled source files for the engine to use
+/Intermediate/
+
+# Binary files
+/Binaries/
+
+# .bin files representing the raw data for the language models as they are too large
+/Content/**/*.bin
+
+# LanguageModels folder containing the uassets representing the language models as they are too large
+/Content/LanguageModels/
+
+# Release build output (upload the zip as a GitHub Release instead)
+/Dist/
+
+# Generated Vulkan shaders (169 MB, one file is 79 MB). Prebuilt release binaries include them;
+# to build GPU support from source, run Scripts/GenerateVulkanShaders.ps1
+/Source/WhisperCpp/Private/VulkanShaders/
